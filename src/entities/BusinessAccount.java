@@ -1,6 +1,6 @@
 package entities;
 
-public class BusinessAccount extends Account {
+public final class BusinessAccount extends Account {
 
 	// Attributes
 	private Double loanLimit;
@@ -32,7 +32,7 @@ public class BusinessAccount extends Account {
 	}
 
 	@Override
-	public void withdraw(double amount) {
+	public final void withdraw(double amount) {
 		super.withdraw(amount);
 		balance -= 2.0;
 	}
